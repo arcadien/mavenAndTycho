@@ -43,6 +43,13 @@
 		<maven-javadoc-plugin.version>2.9.1</maven-javadoc-plugin.version>
 	</properties>
 
+	<licenses>
+		<license>
+			<name>Eclipse Public License - v 1.0</name>
+			<url>http://www.eclipse.org/legal/epl-v10.html</url>
+		</license>
+
+	</licenses>
 	<build>
 		<plugins>
 
@@ -374,25 +381,13 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>${maven-javadoc-plugin.version}</version>
-				<!-- <configuration>
-					<doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
-					<docletArtifact>
-						<groupId>org.umlgraph</groupId>
-						<artifactId>umlgraph</artifactId>
-						<version>5.6.6</version>
-					</docletArtifact>
-					<additionalparam>
-						-views -enumerations -enumconstants -inferrel
-						-visibility
-						-inferdep -quiet
-						-hide java.*
-						-collpackages java.util.*
-						-qualify
-						-postfixpackage
-						-nodefontsize 9
-						-nodefontpackagesize 7</additionalparam>
-					<useStandardDocletOptions>true</useStandardDocletOptions>
-				</configuration> -->
+				<!-- <configuration> <doclet>org.umlgraph.doclet.UmlGraphDoc</doclet> 
+					<docletArtifact> <groupId>org.umlgraph</groupId> <artifactId>umlgraph</artifactId> 
+					<version>5.6.6</version> </docletArtifact> <additionalparam> -views -enumerations 
+					-enumconstants -inferrel -visibility -inferdep -quiet -hide java.* -collpackages 
+					java.util.* -qualify -postfixpackage -nodefontsize 9 -nodefontpackagesize 
+					7</additionalparam> <useStandardDocletOptions>true</useStandardDocletOptions> 
+					</configuration> -->
 
 				<reportSets>
 					<reportSet><!-- by default, id = "default" -->
@@ -467,4 +462,16 @@
 		<module>test.maven.ui.feature</module>
 		<module>test.maven.p2</module>
 	</modules>
+	<ciManagement>
+		<url>https://arcadien.ci.cloudbees.com/job/mavenAndTycho/</url>
+		<system>CloudBees (Jenkins)</system>
+	</ciManagement>
+	<scm>
+		<url>https://github.com/arcadien/mavenAndTycho.git</url>
+	</scm>
+	<organization>
+		<name>Bobosse.net</name>
+		<url>http://bobosse.net/wordpress</url>
+	</organization>
+	<inceptionYear>02/2014</inceptionYear>
 </project>
