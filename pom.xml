@@ -463,8 +463,8 @@
 		<module>test.maven.p2</module>
 	</modules>
 	<ciManagement>
-		<url>https://arcadien.ci.cloudbees.com/job/mavenAndTycho/</url>
-		<system>CloudBees (Jenkins)</system>
+		<url>https://buildhive.cloudbees.com/job/arcadien/job/mavenAndTycho</url>
+		<system>CloudBees (BuildHive)</system>
 	</ciManagement>
 	<scm>
 		<url>https://github.com/arcadien/mavenAndTycho.git</url>
