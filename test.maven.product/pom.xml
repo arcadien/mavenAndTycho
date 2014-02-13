@@ -21,8 +21,8 @@
 				<configuration>
 					<products>
 						<product>
-							<id>test.maven.ui.product</id>
-							<attachId>test.maven.ui.product</attachId>
+							<id>test.maven.product</id>
+							<attachId>test.maven.product</attachId>
 						</product>
 
 					</products>
