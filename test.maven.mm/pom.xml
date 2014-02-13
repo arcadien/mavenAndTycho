@@ -6,6 +6,6 @@
   	<groupId>test.maven</groupId>
   	<artifactId>parent</artifactId>
   	<version>1.0.0-SNAPSHOT</version>
-  	<relativePath>../test.maven.parent</relativePath>
+  	<relativePath>..</relativePath>
   </parent>
 </project>

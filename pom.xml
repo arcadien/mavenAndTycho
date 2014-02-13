@@ -456,6 +456,7 @@
 		</repository>
 	</repositories>
 
+
 	<modules>
 		<module>test.maven.domain1</module>
 		<module>test.maven.domain2</module>
