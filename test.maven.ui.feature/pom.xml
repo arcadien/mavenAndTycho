@@ -8,4 +8,6 @@
   	<version>1.0.0-SNAPSHOT</version>
   	<relativePath>..</relativePath>
   </parent>
+  <name>Product UI feature</name>
+  <description>This feature contains a shortcut for test.maven.ui plugin and its dependencies, allowing easier management of final product dependencies</description>
 </project>

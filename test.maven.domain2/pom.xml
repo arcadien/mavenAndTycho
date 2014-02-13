@@ -8,4 +8,6 @@
   	<artifactId>parent</artifactId>
   	<relativePath>..</relativePath>
   </parent>
+  <description>This plugins contains the fictive domain2 source code</description>
+  <name>Domain2</name>
 </project>

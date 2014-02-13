@@ -8,4 +8,6 @@
   	<version>1.0.0-SNAPSHOT</version>
   	<relativePath>..</relativePath>
   </parent>
+  <name>Domain1</name>
+  <description>This plugins contains the fictive domain1 source code</description>
 </project>

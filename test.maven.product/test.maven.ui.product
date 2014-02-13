@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="test.maven.ui.product" uid="test.maven.ui.product" id="test.maven.ui.product" application="test.maven.ui.application" useFeatures="true" includeLaunchers="true">
+<product name="test.maven.ui.product" uid="test.maven.ui.product" id="test.maven.ui.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>

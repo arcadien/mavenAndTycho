@@ -14,16 +14,6 @@
 	<build>
 
 		<plugins>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-p2-repository-plugin</artifactId>
-				<configuration>
-					<repositoryName>LIALP P2 repository</repositoryName>
-					<includeAllDependencies>true</includeAllDependencies>
-					<createArtifactRepository>true</createArtifactRepository>
-					<finalName>${project.artifactId}-${maven.build.timestamp}</finalName>
-				</configuration>
-			</plugin>
 
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
@@ -54,4 +44,6 @@
 			</plugin>
 		</plugins>
 	</build>
+	<name>Da Product</name>
+	<description>This project handles the final product build, which contains all dependent features as defined in its .product control file.</description>
 </project>

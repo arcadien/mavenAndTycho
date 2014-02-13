@@ -8,7 +8,7 @@
 	<description>Parent POM for all project. Contains shared properties and plugin declaration and configuration</description>
 
 	<properties>
-		<website.id>LIALP</website.id>
+		<website.id>Test Maven and Tycho for Eclipse RCP</website.id>
 
 		<website.deploybasePath>WEBSITE TARGET DIRECTORY</website.deploybasePath>
 		<website.deploybaseurl>file:${website.deploybasePath}</website.deploybaseurl>
@@ -465,5 +465,6 @@
 		<module>test.maven.product</module>
 		<module>test.maven.ui</module>
 		<module>test.maven.ui.feature</module>
+		<module>test.maven.p2</module>
 	</modules>
 </project>

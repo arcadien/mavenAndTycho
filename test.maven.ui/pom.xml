@@ -8,4 +8,6 @@
   	<artifactId>parent</artifactId>
   	<relativePath>..</relativePath>
   </parent>
+  <name>Product's UI</name>
+  <description>This plugins contains the Eclipse RCP code, as of UI code.</description>
 </project>

@@ -8,4 +8,6 @@
   	<artifactId>parent</artifactId>
   	<relativePath>..</relativePath>
   </parent>
+  <description>This plugins contains the fictive domain1 feature which tie together both domain1 and 2 plugins</description>
+  <name>domains feature</name>
 </project>

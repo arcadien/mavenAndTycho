@@ -8,4 +8,6 @@
   	<version>1.0.0-SNAPSHOT</version>
   	<relativePath>..</relativePath>
   </parent>
+  <name>Meta Model</name>
+  <description>This plugin contains the fictive EMF model for the product</description>
 </project>
