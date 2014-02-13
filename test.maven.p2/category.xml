@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <bundle id="test.maven.domain1" version="1.0.0.qualifier"/>
+   <bundle id="test.maven.domain2" version="1.0.0.qualifier"/>
+   <bundle id="test.maven.mm" version="1.0.0.qualifier"/>
+   <bundle id="test.maven.ui" version="1.0.0.qualifier"/>
+</site>

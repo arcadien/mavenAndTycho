@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>test.maven</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../</relativePath>
+	</parent>
+	<groupId>test.maven.p2</groupId>
+	<artifactId>test.maven.p2</artifactId>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-repository-plugin</artifactId>
+				<configuration>
+					<repositoryName>P2 repository</repositoryName>
+					<includeAllDependencies>true</includeAllDependencies>
+					<createArtifactRepository>true</createArtifactRepository>
+					<finalName>${project.artifactId}-${maven.build.timestamp}</finalName>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<name>P2 repository builder</name>
+	<description>This project handles the P2 repository creation</description>
+	<packaging>eclipse-repository</packaging>
+</project>
