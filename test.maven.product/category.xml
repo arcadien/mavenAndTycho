@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/test.maven.domains.feature_1.0.0.qualifier.jar" id="test.maven.domains.feature" version="1.0.0.qualifier">
+      <category name="Domains"/>
+   </feature>
+   <feature url="features/test.maven.ui.feature_1.0.0.qualifier.jar" id="test.maven.ui.feature" version="1.0.0.qualifier" os="win32" ws="win32" arch="x86_64">
+      <category name="UI"/>
+   </feature>
+   <bundle id="test.maven.mm" version="1.0.0.qualifier">
+      <category name="metamodel"/>
+   </bundle>
+   <category-def name="metamodel" label="Meta Model"/>
+   <category-def name="Domains" label="Domains"/>
+   <category-def name="UI" label="UI"/>
+</site>

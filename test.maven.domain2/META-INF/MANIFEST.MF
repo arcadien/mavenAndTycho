@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Domain2
+Bundle-SymbolicName: test.maven.domain2
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Domain 2
+Require-Bundle: test.maven.mm;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
