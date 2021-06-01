@@ -17,8 +17,9 @@
    </license>
 
    <requires>
-      <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="test.maven.mm" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.ecore" version="2.23.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin

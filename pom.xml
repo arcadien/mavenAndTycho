@@ -15,12 +15,12 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
 
-		<kepler-repo.url>http://download.eclipse.org/releases/kepler</kepler-repo.url>
+		<eclipse-release.url>http://download.eclipse.org/releases/2020-12</eclipse-release.url>
 
 		<!-- Eclipse plugin builder -->
-		<tycho.version>0.19.0</tycho.version>
-		<tycho-extras.version>0.19.0</tycho-extras.version>
-		<tycho-maven-plugin.version>0.19.0</tycho-maven-plugin.version>
+		<tycho.version>2.3.0</tycho.version>
+		<tycho-extras.version>2.3.0</tycho-extras.version>
+		<tycho-maven-plugin.version>2.3.0</tycho-maven-plugin.version>
 
 		<!-- metrics -->
 		<maven-checkstyle-plugin.version>2.10</maven-checkstyle-plugin.version>
@@ -28,19 +28,19 @@
 		<findbugs-maven-plugin.version>2.5.2</findbugs-maven-plugin.version>
 		<maven-jxr-plugin.version>2.3</maven-jxr-plugin.version>
 
-		<build-helper-maven-plugin.version>1.8</build-helper-maven-plugin.version>
-		<maven-clean-plugin.version>2.5</maven-clean-plugin.version>
-		<maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
-		<maven-source-plugin.version>2.2.1</maven-source-plugin.version>
+		<build-helper-maven-plugin.version>3.2.0</build-helper-maven-plugin.version>
+		<maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
+		<maven-antrun-plugin.version>3.0.0</maven-antrun-plugin.version>
+		<maven-source-plugin.version>3.2.1</maven-source-plugin.version>
 
-		<maven-surefire-plugin.version>2.16</maven-surefire-plugin.version>
-		<maven-surefire-report-plugin.version>2.16</maven-surefire-report-plugin.version>
-		<cobertura-maven-plugin.version>2.6</cobertura-maven-plugin.version>
-		<maven-dependency-plugin.version>2.8</maven-dependency-plugin.version>
-		<maven-project-info-reports-plugin.version>2.7</maven-project-info-reports-plugin.version>
-		<maven-site-plugin.version>3.3</maven-site-plugin.version>
-		<maven-assembly-plugin.version>2.4</maven-assembly-plugin.version>
-		<maven-javadoc-plugin.version>2.9.1</maven-javadoc-plugin.version>
+		<maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+		<maven-surefire-report-plugin.version>2.22.2</maven-surefire-report-plugin.version>
+		<cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version>
+		<maven-dependency-plugin.version>3.1.2</maven-dependency-plugin.version>
+		<maven-project-info-reports-plugin.version>3.1.2</maven-project-info-reports-plugin.version>
+		<maven-site-plugin.version>3.9.1</maven-site-plugin.version>
+		<maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
+		<maven-javadoc-plugin.version>3.3.0</maven-javadoc-plugin.version>
 	</properties>
 
 	<licenses>
@@ -215,14 +215,12 @@
 						<!-- <pomDependencies>consider</pomDependencies> -->
 						<environments>
 
-							<!-- We only deal with win32 for now, 32 and 64 bits -->
+							<!-- We only deal with win32 64 bits -->
 							<environment>
 								<os>win32</os>
 								<ws>win32</ws>
-								<arch>x86</arch>
+								<arch>x86_64</arch>
 							</environment>
-							<!-- <environment> <os>win32</os> <ws>win32</ws> <arch>x86_64</arch> 
-								</environment> -->
 						</environments>
 					</configuration>
 				</plugin>
@@ -341,7 +339,7 @@
 						<baselineReplace>none</baselineReplace>
 						<baselineRepositories>
 							<repository>
-								<url>http://download.eclipse.org/eclipse/updates/4.3</url>
+								<url>http://download.eclipse.org/eclipse/updates/4.19</url>
 							</repository>
 						</baselineRepositories>
 					</configuration>
@@ -437,8 +435,8 @@
 
 	<repositories>
 		<repository>
-			<id>kepler</id>
-			<url>${kepler-repo.url}</url>
+			<id>Eclipse</id>
+			<url>${eclipse-release.url}</url>
 			<layout>p2</layout>
 			<releases>
 				<enabled>true</enabled>
@@ -463,15 +461,15 @@
 		<module>test.maven.p2</module>
 	</modules>
 	<ciManagement>
-		<url>https://buildhive.cloudbees.com/job/arcadien/job/mavenAndTycho</url>
-		<system>CloudBees (BuildHive)</system>
+		<url>https://app.circleci.com/pipelines/github/arcadien/mavenAndTycho</url>
+		<system>CircleCI</system>
 	</ciManagement>
 	<scm>
 		<url>https://github.com/arcadien/mavenAndTycho.git</url>
 	</scm>
 	<organization>
-		<name>Bobosse.net</name>
-		<url>http://bobosse.net/wordpress</url>
+		<name>Skima</name>
+		<url>http://skima.fr</url>
 	</organization>
 	<inceptionYear>02/2014</inceptionYear>
 </project>

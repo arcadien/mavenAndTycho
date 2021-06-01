@@ -4,5 +4,5 @@ Bundle-Name: Domain 1
 Bundle-SymbolicName: test.maven.domain1
 Bundle-Version: 1.0.0.qualifier
 Require-Bundle: test.maven.mm;bundle-version="1.0.0"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-11

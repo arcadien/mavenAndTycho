@@ -58,11 +58,11 @@
          id="product"
          point="org.eclipse.core.runtime.products">
       <product
-            application="test.maven.ui.application"
-            name="test.maven.ui.product">
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            name="Full Maven/Tycho test product">
          <property
                name="appName"
-               value="test.maven.ui.product">
+               value="Full Maven/Tycho test product">
          </property>
       </product>
    </extension>
